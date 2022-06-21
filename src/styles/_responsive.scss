@@ -1,0 +1,82 @@
+@import "config";
+@include media-md{
+  .menu__btn{
+    visibility: hidden;
+  }
+  .nav{
+    visibility: visible;
+
+    .menu__nav{
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+
+      &__item{
+        display: inline;
+        padding-right: 1.5rem;
+      }
+
+      &__link{
+        font-size: 1.5rem;
+        color: #fff !important;
+      }
+    }
+  }
+
+  .about__bio{
+    font-size: 1.5rem;
+  }
+
+  .projects{
+    &__bio__image{
+      height: 50vh;
+    }
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .text-seconndary{
+      font-size: 3rem;
+    }
+  }
+
+  .contact__list{
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 8rem;
+  }
+}
+
+@include media-lg{
+  .home{
+    padding-top: 60vh;
+
+    .bottom{
+      padding-bottom: 5rem;
+    }
+  }
+  .projects{
+    &__bio__image{
+      height: 60vh;
+    }
+    &__items{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .contact{
+    padding-top: 60vh;
+  }
+  .contact__list{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include media-xl{
+ 
+  .contact{
+    padding-top: 60vh;
+  }
+  .projects__bio__image{
+    height: 50vh;
+  }
+}

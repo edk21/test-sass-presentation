@@ -1,0 +1,13 @@
+$background: #333;
+$color: #fff;
+$font-weights: (
+  "regular": 400,
+  "meium": 500,
+  "bold": 700
+);
+
+body{
+  background: $background;
+  color: $color;
+  font-weight: map-get($font-weights, regular);
+}
